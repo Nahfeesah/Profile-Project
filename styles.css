@@ -1,0 +1,70 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+#about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #00487C;
+}
+.about-me-content {
+  background-color: #F6E8EA;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  display: flex;
+  color: #4b2b1d;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.heading{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 42px;
+}
+.about-me{
+    line-height: 1.5;
+}
+.profile-pic {
+  width: 400px;
+  height: 500px;
+  
+  object-fit: cover;
+}
+.social-icons {
+    list-style: none;
+    gap: 50px;
+    display: flex;
+    justify-self:start;
+    align-items: center;
+    padding: 0;
+}
+@media (max-width: 768px) {
+  .about-me-content {
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .profile-pic {
+    width: 100%;
+    height: auto;
+  }
+}
